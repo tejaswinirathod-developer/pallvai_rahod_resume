@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-bg: #F8FAFD;
+    --color-primary-navy: #0F172A;
+    --color-royal-blue: #1D4ED8;
+    --color-deep-purple: #581C87;
+    --color-accent-purple: #7C3AED;
+    --color-soft-indigo: #EEF2FF;
+    --color-soft-purple: #F3E8FF;
+    --color-border-subtle: #E2E8F0;
+    --color-border-accent: #C7D2FE;
+    --color-dark-text: #0F172A;
+  }
+
+  body {
+    background-color: #F8FAFD;
+    color: #0F172A;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+}
+
+/* Custom scrollbar matching Royal Blue & Purple */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F8FAFD;
+}
+::-webkit-scrollbar-thumb {
+  background: #C7D2FE;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7C3AED;
+}
+
+/* Accessible focus ring */
+:focus-visible {
+  outline: 2px solid #6366F1;
+  outline-offset: 2px;
+}
